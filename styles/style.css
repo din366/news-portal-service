@@ -1,0 +1,151 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.header_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #5f90f8;
+  padding: 20px;
+}
+
+.header_text h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.header_text p {
+  margin: 5px 0 0;
+  color: white;
+}
+
+.search_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.search_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_form_input {
+  min-width: 500px;
+  min-height: 30px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #6d6d6d;
+}
+
+.search_form_input:hover {
+  border: 1px solid #5f90f8;
+}
+
+.search_form_input:focus-visible {
+  border: 1px solid #5f90f8;
+}
+
+.search_form_button {
+  height: 50px;
+  border-radius: 10px;
+  width: 120px;
+  font-size: 20px;
+  background-color: #5f90f8;
+  border: 0;
+  color: white;
+  transition: 0.3s all;
+}
+
+.search_form_button:hover {
+  background-color: #295cca;
+}
+
+.block_news {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.news_mainwrapper_title {
+  font-size: 30px;
+  color: rgb(67, 67, 67);
+  margin-bottom: 30px;
+}
+
+.news_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  grid-gap: 30px 2%;
+  margin-bottom: 50px;
+}
+
+.news_card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  transition: 0.3s all;
+}
+
+.news_card:hover {
+  box-shadow: 0 5px 13px rgb(0 0 0 / 35%);
+  transform: scale(1.02);
+}
+
+.news_img_wrapper {
+  overflow: hidden;
+  max-height: 160px;
+  height: 160px;
+  background-image: url(/img/no-image.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.news_img_wrapper img {
+  width: 100%;
+}
+
+.card_text_wrapper {
+  padding: 20px 25px;
+}
+
+.news_title {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+  transition: 0.3s all;
+}
+
+.news_title:hover {
+  color: #295cca;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.overlay svg {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
